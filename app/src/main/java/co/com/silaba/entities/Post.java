@@ -38,4 +38,7 @@ public class Post {
 
     }
 
+    //TODO: Falta implementar extension extension extension Post: SnapshotParser de Post.swift
+
+
 }
