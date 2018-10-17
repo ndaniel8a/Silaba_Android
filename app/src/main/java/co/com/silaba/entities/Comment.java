@@ -10,7 +10,7 @@ public class Comment {
 
     private String userId;
 
-    Comment() {
+    public Comment() {
         id = "";
         message = "";
         timestamp = 0l;

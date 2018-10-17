@@ -10,6 +10,14 @@ public class MachineLearningList {
     public MachineLearningList () {
         this.machineLearningList = new ArrayList<>();
     }
+    
+    public List<MachineLearning> getMachineLearningList() {
+      return machineLearningList;
+    }
+
+    public void setMachineLearningList(List<MachineLearning> machineLearningList) {
+      this.machineLearningList = machineLearningList;
+    }
 
     public int getCount() {
         return (this.machineLearningList == null) ? 0 : this.machineLearningList.size();
@@ -60,7 +68,7 @@ public class MachineLearningList {
     }
 
     public MachineLearning suscribe(int index) {
-        if( this.machineLearningList != null && ! this.machineLearningList.isEmpty()  ) {
+        if( index >= 0 && this.machineLearningList != null && ! this.machineLearningList.isEmpty()  ) {
             return this.machineLearningList.get(index);
         }
 

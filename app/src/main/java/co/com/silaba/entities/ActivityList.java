@@ -1,5 +1,6 @@
 package co.com.silaba.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ActivityList {
@@ -13,6 +14,14 @@ public class ActivityList {
     private List<String> comments;
 
     private List<String> following;
+    
+    public ActivityList() {
+      this.activities = new ArrayList<Activity>();
+      this.posts = new ArrayList<String>();
+      this.users = new ArrayList<String>();
+      this.comments = new ArrayList<String>();
+      this.following = new ArrayList<String>();
+    }
 
 
     public List<Activity> getActivities() {

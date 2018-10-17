@@ -1,12 +1,18 @@
 package co.com.silaba.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CommentList {
 
-    public List<Comment> comments;
+    private List<Comment> comments;
 
-    public List<User> users;
+    private List<User> users;
+    
+    public CommentList() {
+      this.comments = new ArrayList<Comment>();
+      this.users = new ArrayList<User>();
+    }
 
     public List<Comment> getComments() {
         return comments;

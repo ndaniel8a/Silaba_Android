@@ -3,7 +3,7 @@ package co.com.silaba.entities;
 public class KnowledgeSource {
 
 
-    enum knowledgeSourceType {
+    public enum knowledgeSourceType {
         VIDEOS,
         TRADUCTION,
         GENERAL,
@@ -22,7 +22,7 @@ public class KnowledgeSource {
 
     private String url;
 
-    KnowledgeSource() {
+    public KnowledgeSource() {
         this.id = "";
         this.timestamp = 0l;
         this.type = knowledgeSourceType.RECOMMEND;

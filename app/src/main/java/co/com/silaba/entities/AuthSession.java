@@ -5,7 +5,7 @@ public class AuthSession {
     private User user;
 
 
-    AuthSession () {
+    public AuthSession () {
         //TODO: Revisar el init() de AuthSession.swift para determinar si se debe implementar en este constructor
     }
 

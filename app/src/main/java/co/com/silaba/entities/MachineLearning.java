@@ -11,8 +11,7 @@ public class MachineLearning {
 
     private Float confidence;
 
-    //TODO: Lista de tipo VideoList, se debe definir VideoList
-    private List<?> videoList;
+    private List<VideoList> videoList;
 
     private String model;
 
@@ -22,10 +21,10 @@ public class MachineLearning {
         this.identifier = "";
         this.model = "";
         this.confidence = 0f;
-        this.videoList = new ArrayList();
+        this.videoList = new ArrayList<VideoList>();
     }
 
-    public MachineLearning(String identificador, String identifier, Float confidence, List<?> videoList, String model) {
+    public MachineLearning(String identificador, String identifier, Float confidence, List<VideoList> videoList, String model) {
         this.identificador = identificador;
         this.identifier = identifier;
         this.confidence = confidence;
@@ -61,7 +60,7 @@ public class MachineLearning {
         return videoList;
     }
 
-    public void setVideoList(List<?> videoList) {
+    public void setVideoList(List<VideoList> videoList) {
         this.videoList = videoList;
     }
 

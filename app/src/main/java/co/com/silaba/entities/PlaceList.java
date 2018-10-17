@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PlaceList {
 
-    List<Place> places;
+    private List<Place> places;
 
     public PlaceList() {
         this.places = new ArrayList<>();
