@@ -16,12 +16,18 @@ public class User {
 
     private String avatarUrl;
 
-    User() {
+    public User() {
         this.id = "";
         this.username = "";
         this.firstName = "";
         this.lastName = "";
         this.email = "";
+    }
+    
+    public static User getUser(String id) {
+      User u = new User();
+      u.setId(id);
+      return u;
     }
 
     public String getFullName() {

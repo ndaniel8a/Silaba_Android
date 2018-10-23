@@ -23,5 +23,5 @@ public class ProfileList {
   public void setProfiles(List<Profile> profiles) {
     this.profiles = profiles;
   }
-
+  
 }
